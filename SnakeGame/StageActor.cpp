@@ -6,4 +6,3 @@ StageActor::StageActor(Game* game):
 {
 	new StageDrawer(this, 100);
 }
-

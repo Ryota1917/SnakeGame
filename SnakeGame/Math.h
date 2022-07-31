@@ -111,6 +111,20 @@ namespace Math
 	}
 }
 
+class Vector2Int {
+public:
+	int x;
+	int y;
+
+	Vector2Int(int _x,int _y):
+		x(_x),y(_y)
+	{}
+
+	Vector2Int():
+		Vector2Int(0,0)
+	{}
+};
+
 // 2D Vector
 class Vector2
 {

@@ -27,6 +27,8 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="Parameter.hpp" />
+    <ClInclude Include="SnakeActor.h" />
+    <ClInclude Include="SnakeDrawer.h" />
     <ClInclude Include="SpriteDrawer.h" />
     <ClInclude Include="StageActor.h" />
     <ClInclude Include="StageDrawer.h" />
@@ -41,6 +43,8 @@
     <ClCompile Include="Game_Load.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Math.cpp" />
+    <ClCompile Include="SnakeActor.cpp" />
+    <ClCompile Include="SnakeDrawer.cpp" />
     <ClCompile Include="SpriteDrawer.cpp" />
     <ClCompile Include="StageActor.cpp" />
     <ClCompile Include="StageDrawer.cpp" />

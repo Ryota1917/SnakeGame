@@ -2,10 +2,12 @@
 #include"Actor.h"
 #include"StageActor.h"
 #include"FruitActor.h"
+#include"SnakeActor.h"
 
 void Game::LoadData() {
 	new StageActor(this);
 	new FruitActor(this, 10, 10);
+	new SnakeActor(this);
 }
 
 void Game::UnloadData() {
