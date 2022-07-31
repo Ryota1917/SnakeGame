@@ -1,0 +1,2 @@
+D:\Develop-D\game\SnakeGame\Debug\SnakeGame.exe.lastcodeanalysissucceeded
+D:\Develop-D\game\SnakeGame\SnakeGame\Debug\NativeCodeAnalysis.read.1.tlog

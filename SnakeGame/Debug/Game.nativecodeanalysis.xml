@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Develop-D\game\SnakeGame\include\</FILEPATH>
+      <FILENAME>SDL_rect.h</FILENAME>
+      <LINE>102</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'SDL_bool' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>SDL_PointInRect</FUNCTION>
+    <DECORATED>SDL_PointInRect</DECORATED>
+    <FUNCLINE>99</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Develop-D\game\SnakeGame\SnakeGame\</FILEPATH>
+      <FILENAME>Actor.h</FILENAME>
+      <LINE>41</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'Actor::State' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>Actor::GetState</FUNCTION>
+    <DECORATED>?GetState@Actor@@QAE?AW4State@1@XZ</DECORATED>
+    <FUNCLINE>41</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Develop-D\game\SnakeGame\SnakeGame\</FILEPATH>
+      <FILENAME>Game.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>変数 'Game::mIsUpdatingActors' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。</DESCRIPTION>
+    <FUNCTION>Game::{ctor}</FUNCTION>
+    <DECORATED>??0Game@@QAE@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Game::mIsUpdatingActors</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

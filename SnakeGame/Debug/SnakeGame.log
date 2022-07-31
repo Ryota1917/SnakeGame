@@ -1,0 +1,18 @@
+﻿  Actor.cpp
+  Component.cpp
+  Drawer.cpp
+  FruitActor.cpp
+  FruitDrawer.cpp
+  Game.cpp
+  Game_Load.cpp
+  Main.cpp
+  Math.cpp
+  SpriteDrawer.cpp
+  StageActor.cpp
+  StageDrawer.cpp
+  コンパイル中...
+  コードを生成中...
+  SnakeGame.vcxproj -> D:\Develop-D\game\SnakeGame\Debug\SnakeGame.exe
+D:\Develop-D\game\SnakeGame\include\SDL_rect.h(102): warning C26812: 列挙型 'SDL_bool' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。
+D:\Develop-D\game\SnakeGame\SnakeGame\Actor.h(41): warning C26812: 列挙型 'Actor::State' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。
+D:\Develop-D\game\SnakeGame\SnakeGame\Game.cpp(8): warning C26495: 変数 'Game::mIsUpdatingActors' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。
