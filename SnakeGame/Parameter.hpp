@@ -10,4 +10,5 @@ public:
 	static const int StageHeight = 50;
 	/// ステージの幅
 	static const int StageWidth = 50;
+
 };

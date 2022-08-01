@@ -5,9 +5,11 @@
 #include"SnakeActor.h"
 
 void Game::LoadData() {
-	new StageActor(this);
-	new FruitActor(this, 10, 10);
-	new SnakeActor(this);
+	auto stage = new StageActor(this);
+	auto fruit = new FruitActor(this, 10, 10);
+	auto snake = new SnakeActor(this);
+	stage->AddSnake(snake);
+	stage->SetFruitActor(fruit);
 }
 
 void Game::UnloadData() {
