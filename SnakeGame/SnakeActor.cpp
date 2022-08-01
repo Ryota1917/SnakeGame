@@ -34,6 +34,13 @@ void SnakeActor::Move()
 	}
 }
 
+void SnakeActor::EatMove()
+{
+	if (CanMove()) {
+		mSnake.push_front(Next());
+	}
+}
+
 Vector2Int SnakeActor::Next()
 {
 	Vector2Int front = mSnake.front();

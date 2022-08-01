@@ -15,6 +15,7 @@ public:
 
 	bool CanMove();
 	void Move();
+	void EatMove();
 
 	const std::deque<Vector2Int>& GetSnakeDeque()const { return mSnake; }
 	const Vector2Int GetSnakeFront()const { return mSnake.front(); }

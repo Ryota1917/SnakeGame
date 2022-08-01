@@ -18,9 +18,12 @@ void StageActor::UpdateActor(float deltaTime)
 		// snake‚ð“®‚©‚·
 		for (auto snake : mSnakes) {
 			if (snake->CanMove()) {
-				snake->Move();
 				if (IsSnakeEat(snake, mFruit)) {
 					SnakeEat(snake, mFruit);
+					snake->EatMove();
+				}
+				else {
+					snake->Move();
 				}
 			}
 			else {
