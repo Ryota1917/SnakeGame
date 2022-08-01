@@ -17,6 +17,7 @@ public:
 	void Move();
 
 	const std::deque<Vector2Int>& GetSnakeDeque()const { return mSnake; }
+	const Vector2Int GetSnakeFront()const { return mSnake.front(); }
 	void SetDirection(Direction dir) { mDir = dir; }
 
 private:

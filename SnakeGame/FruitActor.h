@@ -9,13 +9,13 @@ public:
 
 
 
-	int GetX()const { return mx; }
-	int GetY()const { return my; }
-	void SetPosition(const int x, const int y) { mx = x; my = y; }
+	int GetX()const { return mPoint.x; }
+	int GetY()const { return mPoint.y; }
+	const Vector2Int GetPoint()const {return mPoint; }
+	void SetPosition(const int x, const int y) { mPoint.x = x; mPoint.y = y; }
 	void ChangePosRandom();
 
 private:
-	int mx;
-	int my;
+	Vector2Int mPoint;
 	std::mt19937 mRnd;
 };

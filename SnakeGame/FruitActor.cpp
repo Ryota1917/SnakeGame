@@ -7,20 +7,20 @@ FruitActor::FruitActor(Game* game):
 	Actor(game),mRnd(Parameter::FruitSeed)
 {
 	auto drawer = new FruitDrawer(this, 200);
-	mx = mRnd() % Parameter::StageWidth;
-	my = mRnd() % Parameter::StageHeight;
+	mPoint.x = mRnd() % Parameter::StageWidth;
+	mPoint.y = mRnd() % Parameter::StageHeight;
 }
 
 FruitActor::FruitActor(Game* game, int _x, int _y):
-	Actor(game),mx(_x),my(_y),mRnd(Parameter::FruitSeed)
+	Actor(game), mPoint(_x,_y),mRnd(Parameter::FruitSeed)
 {
 	auto drawer = new FruitDrawer(this, 200);
 }
 
 void FruitActor::ChangePosRandom()
 {
-	mx = mRnd() % Parameter::StageWidth;
-	my = mRnd() % Parameter::StageHeight;
+	mPoint.x = mRnd() % Parameter::StageWidth;
+	mPoint.y = mRnd() % Parameter::StageHeight;
 }
 
  

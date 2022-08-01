@@ -5,7 +5,7 @@
 #include"Parameter.hpp"
 
 StageActor::StageActor(Game* game):
-	Actor(game),mTurnSpace(10),mTotalTurn(0)
+	Actor(game),mTurnSpace(Parameter::TurnSpace),mTotalTurn(0)
 {
 	new StageDrawer(this, 100);
 
@@ -19,6 +19,9 @@ void StageActor::UpdateActor(float deltaTime)
 		for (auto snake : mSnakes) {
 			if (snake->CanMove()) {
 				snake->Move();
+				if (IsSnakeEat(snake, mFruit)) {
+					SnakeEat(snake, mFruit);
+				}
 			}
 			else {
 
@@ -41,4 +44,14 @@ void StageActor::RemoveSnake(SnakeActor* snake)
 		std::iter_swap(iter, mSnakes.end() - 1);
 		mSnakes.pop_back();
 	}
+}
+
+bool StageActor::IsSnakeEat(SnakeActor* snake, FruitActor* fruit)
+{
+	return snake->GetSnakeFront() == fruit->GetPoint();
+}
+
+void StageActor::SnakeEat(SnakeActor* snake, FruitActor* fruit)
+{
+	fruit->ChangePosRandom();
 }

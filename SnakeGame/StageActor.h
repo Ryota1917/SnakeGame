@@ -17,6 +17,9 @@ public:
 
 
 private:
+	bool IsSnakeEat(SnakeActor* snake, FruitActor* fruit);
+	void SnakeEat(SnakeActor* snake, FruitActor* fruit);
+
 	std::vector<class SnakeActor*>mSnakes;
 	class FruitActor* mFruit;
 	int mTotalTurn;

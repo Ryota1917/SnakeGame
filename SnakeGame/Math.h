@@ -123,6 +123,11 @@ public:
 	Vector2Int():
 		Vector2Int(0,0)
 	{}
+
+	friend bool operator==(const Vector2Int a, const Vector2Int b) 
+	{
+		return (a.x == b.x) && (a.y == b.y);
+	}
 };
 
 // 2D Vector
