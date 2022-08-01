@@ -11,4 +11,6 @@ public:
 	/// ステージの幅
 	static const int StageWidth = 50;
 
+	/// Fruitのシード値
+	static const unsigned int FruitSeed = 0x12345679;
 };

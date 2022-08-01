@@ -6,7 +6,7 @@
 
 void Game::LoadData() {
 	auto stage = new StageActor(this);
-	auto fruit = new FruitActor(this, 10, 10);
+	auto fruit = new FruitActor(this);
 	auto snake = new KeyControllSnakeActor(this);
 	stage->AddSnake(snake);
 	stage->SetFruitActor(fruit);
