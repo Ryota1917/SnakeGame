@@ -16,7 +16,7 @@ SnakeActor::SnakeActor(Game* game) :
 bool SnakeActor::CanMove()
 {
 	Vector2Int nextPos = Next();
-	if (std::min(nextPos.x, nextPos.y) > 0 && nextPos.x < Parameter::StageWidth && nextPos.y < Parameter::StageHeight)
+	if (std::min(nextPos.x, nextPos.y) >= 0 && nextPos.x < Parameter::StageWidth && nextPos.y < Parameter::StageHeight)
 	{
 		return true;
 	}

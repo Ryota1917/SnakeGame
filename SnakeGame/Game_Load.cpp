@@ -2,12 +2,12 @@
 #include"Actor.h"
 #include"StageActor.h"
 #include"FruitActor.h"
-#include"SnakeActor.h"
+#include"KeyControllSnakeActor.h"
 
 void Game::LoadData() {
 	auto stage = new StageActor(this);
 	auto fruit = new FruitActor(this, 10, 10);
-	auto snake = new SnakeActor(this);
+	auto snake = new KeyControllSnakeActor(this);
 	stage->AddSnake(snake);
 	stage->SetFruitActor(fruit);
 }

@@ -5,7 +5,7 @@
 #include"Parameter.hpp"
 
 StageActor::StageActor(Game* game):
-	Actor(game),mTurnSpace(30),mTotalTurn(0)
+	Actor(game),mTurnSpace(10),mTotalTurn(0)
 {
 	new StageDrawer(this, 100);
 
