@@ -19,8 +19,8 @@ void StageActor::UpdateActor(float deltaTime)
 		for (auto snake : mSnakes) {
 			if (snake->CanMove()) {
 				if (IsSnakeEat(snake, mFruit)) {
-					SnakeEat(snake, mFruit);
 					snake->EatMove();
+					SnakeEat(snake, mFruit);
 				}
 				else {
 					snake->Move();
@@ -51,7 +51,7 @@ void StageActor::RemoveSnake(SnakeActor* snake)
 
 bool StageActor::IsSnakeEat(SnakeActor* snake, FruitActor* fruit)
 {
-	return snake->GetSnakeFront() == fruit->GetPoint();
+	return snake->Next() == fruit->GetPoint();
 }
 
 void StageActor::SnakeEat(SnakeActor* snake, FruitActor* fruit)
