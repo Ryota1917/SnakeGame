@@ -25,8 +25,11 @@
     <ClInclude Include="FruitActor.h" />
     <ClInclude Include="FruitDrawer.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="KeyControllSnakeActor.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="Parameter.hpp" />
+    <ClInclude Include="RandomSnake.h" />
+    <ClInclude Include="SimpleAISnake.h" />
     <ClInclude Include="SnakeActor.h" />
     <ClInclude Include="SnakeDrawer.h" />
     <ClInclude Include="SpriteDrawer.h" />
@@ -41,8 +44,11 @@
     <ClCompile Include="FruitDrawer.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Game_Load.cpp" />
+    <ClCompile Include="KeyControllSnakeActor.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Math.cpp" />
+    <ClCompile Include="RandomSnake.cpp" />
+    <ClCompile Include="SimpleAISnake.cpp" />
     <ClCompile Include="SnakeActor.cpp" />
     <ClCompile Include="SnakeDrawer.cpp" />
     <ClCompile Include="SpriteDrawer.cpp" />
