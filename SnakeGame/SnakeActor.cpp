@@ -7,9 +7,7 @@ SnakeActor::SnakeActor(Game* game) :
 	Actor(game), mDir(Direction::RIGHT), IsAlive(true)
 {
 	new SnakeDrawer(this, 300);
-	mSnake.push_back(Vector2Int(1, 2));
-	mSnake.push_back(Vector2Int(1, 3));
-	mSnake.push_back(Vector2Int(1, 4));
+	mSnake.push_back(Vector2Int(mRnd() % Parameter::StageWidth, mRnd() % Parameter::StageHeight));
 }
 
 
@@ -29,8 +27,8 @@ bool SnakeActor::CanMove()
 void SnakeActor::Move()
 {
 	if (CanMove()) {
-		mSnake.pop_back();
 		mSnake.push_front(Next());
+		mSnake.pop_back();
 	}
 }
 

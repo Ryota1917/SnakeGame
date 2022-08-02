@@ -1,6 +1,7 @@
 #pragma once
 #include"Actor.h"
 #include<deque>
+#include<random>
 
 class SnakeActor :public Actor {
 public:
@@ -23,8 +24,10 @@ public:
 	Vector2Int Next();
 
 private:
-
 	std::deque<Vector2Int> mSnake;
 	Direction mDir;
 	bool IsAlive;
+
+protected:
+	std::mt19937 mRnd;
 };
