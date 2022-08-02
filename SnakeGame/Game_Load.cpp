@@ -3,11 +3,12 @@
 #include"StageActor.h"
 #include"FruitActor.h"
 #include"KeyControllSnakeActor.h"
+#include"RandomSnake.h"
 
 void Game::LoadData() {
 	auto stage = new StageActor(this);
 	auto fruit = new FruitActor(this);
-	auto snake = new KeyControllSnakeActor(this);
+	auto snake = new RandomSnake(this);
 	stage->AddSnake(snake);
 	stage->SetFruitActor(fruit);
 }
