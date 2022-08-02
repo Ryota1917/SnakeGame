@@ -4,11 +4,12 @@
 #include"FruitActor.h"
 #include"KeyControllSnakeActor.h"
 #include"RandomSnake.h"
+#include"SimpleAISnake.h"
 
 void Game::LoadData() {
 	auto stage = new StageActor(this);
 	auto fruit = new FruitActor(this);
-	auto snake = new RandomSnake(this);
+	auto snake = new SimpleAISnake(this,fruit);
 	stage->AddSnake(snake);
 	stage->SetFruitActor(fruit);
 }
