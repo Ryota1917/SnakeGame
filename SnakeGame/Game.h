@@ -44,7 +44,7 @@ private:
 	bool mIsUpdatingActors;
 
 	// all Drawers
-	std::set<class Drawer*, std::function<bool(const Drawer*, const Drawer*)>> mDrawers;
+	std::multiset<class Drawer*, std::function<bool(const Drawer*, const Drawer*)>> mDrawers;
 
 	SDL_Window* mWindow;
 	SDL_Renderer* mRenderer;
