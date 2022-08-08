@@ -9,9 +9,11 @@
 void Game::LoadData() {
 	auto stage = new StageActor(this);
 	auto fruit = new FruitActor(this);
-	auto snake = new SimpleAISnake(this,fruit);
-	stage->AddSnake(snake);
+	//auto snake = new KeyControllSnakeActor(this);
+	auto snake2 = new SimpleAISnake(this,fruit);
+	//stage->AddSnake(snake);
 	stage->SetFruitActor(fruit);
+	stage->AddSnake(snake2);
 }
 
 void Game::UnloadData() {

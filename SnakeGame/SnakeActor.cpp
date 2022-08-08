@@ -4,9 +4,9 @@
 #include<algorithm>
 
 SnakeActor::SnakeActor(Game* game) :
-	Actor(game), mDir(Direction::RIGHT), IsAlive(true)
+	Actor(game), mDir(Direction::RIGHT), mIsAlive(true)
 {
-	new SnakeDrawer(this, 300);
+	new SnakeDrawer(this, 400);
 	mSnake.push_back(Vector2Int(mRnd() % Parameter::StageWidth, mRnd() % Parameter::StageHeight));
 }
 
@@ -26,6 +26,9 @@ bool SnakeActor::CanMove()
 
 void SnakeActor::Move()
 {
+	if (!mIsAlive) {
+		return;
+	}
 	if (CanMove()) {
 		mSnake.push_front(Next());
 		mSnake.pop_back();
@@ -34,6 +37,9 @@ void SnakeActor::Move()
 
 void SnakeActor::EatMove()
 {
+	if (!mIsAlive) {
+		return;
+	}
 	if (CanMove()) {
 		mSnake.push_front(Next());
 	}

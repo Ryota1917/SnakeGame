@@ -222,7 +222,15 @@ void Game::AddDrawer(Drawer* drawer) {
 }
 
 void Game::RemoveDrawer(Drawer* drawer) {
-	mDrawers.erase(drawer);
+	//auto count = mDrawers.count(drawer);
+	//SDL_Log("%d", count);
+	auto iterp = mDrawers.equal_range(drawer);
+	for (auto iter = iterp.first; iter != iterp.second; iter++) {
+		if (*iter == drawer) {
+			mDrawers.erase(iter);
+			break;
+		}
+	}
 }
 
 SDL_Texture* Game::GetTexture(const std::string& fileName) {

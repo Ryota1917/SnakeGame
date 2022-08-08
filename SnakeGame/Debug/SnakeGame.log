@@ -1,9 +1,2 @@
-﻿  FruitActor.cpp
-  FruitDrawer.cpp
-  SnakeActor.cpp
-  SnakeDrawer.cpp
-  StageActor.cpp
-  StageDrawer.cpp
-  コードを生成中...
-D:\Develop-D\game\SnakeGame\SnakeGame\SnakeActor.cpp(60): warning C4715: 'SnakeActor::Next': 値を返さないコントロール パスがあります。
+﻿  StageActor.cpp
   SnakeGame.vcxproj -> D:\Develop-D\game\SnakeGame\Debug\SnakeGame.exe
