@@ -18,4 +18,15 @@ void SnakeDrawer::Draw(SDL_Renderer * renderer)
 		};
 		SDL_RenderFillRect(renderer, &r);
 	}
+
+	//@æ“ª‚ÌF‚ð•Ï‚¦‚é
+	SDL_SetRenderDrawColor(renderer, 255, 0, 255, 255);
+	auto pos = mSnakeActor->GetSnakeFront();
+	SDL_Rect r{
+	(Parameter::GridSize + Parameter::GridSpace) * pos.x,
+	(Parameter::GridSize + Parameter::GridSpace) * pos.y,
+	Parameter::GridSize,
+	Parameter::GridSize
+	};
+	SDL_RenderFillRect(renderer, &r);
 }
