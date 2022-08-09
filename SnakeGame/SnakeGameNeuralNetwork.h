@@ -17,4 +17,5 @@ private:
 	std::unordered_map<int, NNState*> mNNState;
 	std::unordered_map<int, std::function<int()>> mInputLayerUpdate;
 	class StageActor* mStage;
+	int mLayerNum;
 };
