@@ -1,2 +1,5 @@
-﻿  StageActor.cpp
+﻿  NNState.cpp
+  SnakeDrawer.cpp
+  SnakeGameNeuralNetwork.cpp
+  コードを生成中...
   SnakeGame.vcxproj -> D:\Develop-D\game\SnakeGame\Debug\SnakeGame.exe

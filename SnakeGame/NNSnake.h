@@ -1,5 +1,7 @@
 #pragma once
 #include"SnakeActor.h"
+#include<vector>
+#include"SnakeGameNeuralNetwork.h"
 
 class NNSnake :public SnakeActor {
 public:
@@ -7,8 +9,5 @@ public:
 	void UpdateActor(float deltaTime)override;
 private:
 	class StageActor* mStage;
-
-	struct NNState {
-
-	};
+	SnakeGameNeuralNetwork mNN;
 };
